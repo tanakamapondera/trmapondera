@@ -16,7 +16,7 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
           <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Hello! My name is Tanaka. I'm a <strong>Platform Engineer</strong> at <strong><a href="https://www.anant.us/home">Anant Corporation</a></strong>. We design, build, and manage business platforms for big and small businesses, specializing in <strong>information systems</strong>, <strong>data analytics</strong> and <strong>customer experience</strong>.</p>
+          <p>Hello! My name is Tanaka. I'm a <strong>Platform Engineer</strong> at <strong><a href="https://www.anant.us/home">Anant Corporation</a></strong> in Washington D.C.. We design, build, and manage business platforms for big and small businesses, specializing in <strong>information systems</strong>, <strong>data analytics</strong> and <strong>customer experience</strong>.</p>
           {close}
         </article>
 
@@ -57,10 +57,10 @@ class Main extends React.Component {
                     </ul>
                 </form>
           <ul className="icons">
-            <li><a href="https://twitter.com/MaponderaTanaka" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="https://www.linkedin.com/in/tanaka-mapondera-59787260/" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
-            <li><a href="https://www.instagram.com/tanakarm/" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="https://github.com/tanakamapondera" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li><a href="https://twitter.com/MaponderaTanaka" target="_blank" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
+            <li><a href="https://www.linkedin.com/in/tanaka-mapondera-59787260/" target="_blank" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
+            <li><a href="https://www.instagram.com/tanakarm/" target="_blank" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href="https://github.com/tanakamapondera" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>
