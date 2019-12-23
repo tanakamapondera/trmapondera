@@ -8,7 +8,7 @@ import pic03 from '../images/pic03.jpg'
 class Main extends React.Component {
   render() {
 
-    let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
+    let close = <div role="button" tabIndex={0} className="close" onClick={() => {this.props.onCloseArticle()}} onKeyDown={this.handleClick}></div>
 
     return (
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
@@ -57,10 +57,10 @@ class Main extends React.Component {
                     </ul>
                 </form>
           <ul className="icons">
-            <li><a href="https://twitter.com/MaponderaTanaka" target="_blank" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="https://www.linkedin.com/in/tanaka-mapondera-59787260/" target="_blank" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
-            <li><a href="https://www.instagram.com/tanakarm/" target="_blank" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="https://github.com/tanakamapondera" target="_blank" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li><a href="https://twitter.com/MaponderaTanaka" target="_blank" rel="noopener noreferrer" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
+            <li><a href="https://www.linkedin.com/in/tanaka-mapondera-59787260/" target="_blank" rel="noopener noreferrer" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
+            <li><a href="https://www.instagram.com/tanakarm/" target="_blank" rel="noopener noreferrer" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href="https://github.com/tanakamapondera" target="_blank" rel="noopener noreferrer" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>
